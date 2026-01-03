@@ -9,15 +9,15 @@ This repository contains the **Infrastructure-as-Code (IaC)** configurations for
 
 ### 🛡 Secure Remote Access (ZeroTier)
 To maintain security without exposing ports to the public internet, I use a self-hosted **ZeroTier** node. 
-* [cite_start]**Networking:** Operates in `host` mode for seamless integration.
+* **Networking:** Operates in `host` mode for seamless integration.
 * **Security:** Configured with `NET_ADMIN` capabilities to manage virtual network interfaces securely.
 
 ### 📊 Monitoring & Observability Stack
-[cite_start]A comprehensive monitoring pipeline to track system health and container performance[cite: 26, 57]:
+A comprehensive monitoring pipeline to track system health and container performance:
 * **Prometheus:** Core time-series database scraping metrics every 15s.
 * **Node Exporter:** Collects hardware-level metrics (CPU, RAM, Disk I/O).
 * **Alertmanager:** Integrated for proactive system notifications.
-* [cite_start]**Grafana:** Visualization layer with persistent data storage and automated provisioning of data sources[cite: 71].
+* **Grafana:** Visualization layer with persistent data storage and automated provisioning of data sources.
 
 ### 🛠 Utility & Application Services
 * **Stirling-PDF:** A local, web-based PDF manipulation suite for privacy-conscious document handling.
