@@ -34,7 +34,7 @@ To optimize energy consumption, the server follows a strict automated power cycl
 * **Hardware Note:** Deep Sleep mode is intentionally disabled to ensure reliable wake-up cycles and remote accessibility.
 
 ### 🛡️ Resilience & Watchdog Implementation
-To ensure 24/7 availability of the services (especially the monitoring and VPN nodes), I implemented a multi-layered failover strategy:
+To ensure 16/7 availability of the services (especially the monitoring and VPN nodes), I implemented a multi-layered failover strategy:
 * **Software Watchdog:** Due to the lack of a hardware watchdog on the Optiplex 3070, a software-based watchdog monitors system activity. It triggers a hard reboot after 15 seconds of kernel inactivity.
 * **Kernel Panic Handling:** Optimized kernel parameters for automated recovery:
     * `kernel.softlockup_panic=1`: Forces a panic on soft lockups.
