@@ -30,7 +30,7 @@ Since this lab runs on a **Dell Optiplex 3070**, I implemented specific OS-level
 ### 🔌 Power Management & Automation
 To optimize energy consumption, the server follows a strict automated power cycle:
 * **Automation:** A `systemd timer` triggers a shutdown every day at 01:00 AM.
-* **Wake-on-LAN / RTC:** The system is configured to boot back up at 09:00 AM.
+* **RTC:** The system is configured to boot back up at 09:00 AM.
 * **Hardware Note:** Deep Sleep mode is intentionally disabled to ensure reliable wake-up cycles and remote accessibility.
 
 ### 🛡️ Resilience & Watchdog Implementation
